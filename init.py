@@ -12,7 +12,7 @@ class Init(object):
     uwsgi = False
     site_title = "CMSiMDE"
     #ip = "127.0.0.1"
-    ip = "172.20.10.3"
+    ip = "::"
     port = 9443
     def __init__(self):
         # hope to create downloads and images directories　
