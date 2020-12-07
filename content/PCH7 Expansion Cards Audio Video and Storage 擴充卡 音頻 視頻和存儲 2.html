@@ -1,0 +1,277 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>cp2020bg1</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">cp2020bg1</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='Teammate.html'>Teammate</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li class='has-children'><a href='40923203陳宥歆.html'>40923203陳宥歆</a><ul class='dropdown'><li><a href='PCH4 Cases Form Factors and Power Supplies 外殼外形尺寸和電源.html'>PCH4 Cases Form Factors and Power Supplies 外殼外形尺寸和電源</a><li><a href='PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 1.html'>PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 1</a><li><a href='PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 2.html'>PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 2</a></li></ul><li><a href='40923208葉媛婷.html'>40923208葉媛婷</a><li><a href='40923209盧詩婷.html'>40923209盧詩婷</a><li><a href='40923210羅諭琳.html'>40923210羅諭琳</a><li><a href='40923223游尚霖.html'>40923223游尚霖</a><li><a href='40923225黃亦銘.html'>40923225黃亦銘</a><li><a href='40923230黃暐哲.html'>40923230黃暐哲</a><li class='has-children'><a href='40923238鄒杰.html'>40923238鄒杰</a><ul class='dropdown'><li><a href='PCH 6 Memory and BIOS.html'>PCH 6 Memory and BIOS</a><li><a href='PCH 18: Laptop and Notebook Component Replacement-1.html'>PCH 18: Laptop and Notebook Component Replacement-1</a></li></ul><li class='has-children'><a href='40923239蔡育嘉-1.html'>40923239蔡育嘉-1</a><ul class='dropdown'><li><a href='Pch1 1、Introduction.html'>Pch1 1、Introduction</a><li><a href='PCH 18: Laptop and Notebook Component Replacement-2.html'>PCH 18: Laptop and Notebook Component Replacement-2</a></li></ul><li><a href='40923239蔡育嘉-2.html'>40923239蔡育嘉-2</a><li><a href='40923244鄭宇佑.html'>40923244鄭宇佑</a><li><a href='40923249戴揚哲.html'>40923249戴揚哲</a></li></ul><li><a href='HW2.html'>HW2</a><li><a href='HW3.html'>HW3</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 1 << <a href='PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 1.html'>Previous</a> <a href='40923208葉媛婷.html'>Next</a> >> 40923208葉媛婷<br /><h1>PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 2</h1>
+storage Devices Overview   存儲設備 概述
+<p><span>As we discussed in a previous module, storage is one function that makes a computer a computer. So, storage devices are a critical component. Storage devices hold all of the bits and bytes that make up the data we process, photographs, music, and more. There are many different types of storage devices used with modern computers, including hard drives, optical drives, and external drives. Some computers still have legacy storage devices such as floppy disks.</span></p>
+<p>正如我們在上一個模塊中討論的那樣，存儲是一種使計算機成為計算機的功能。因此，存儲設備是關鍵組件。存儲設備保留構成我們處理的數據，照片，音樂等的所有位和字節。現代計算機使用許多不同類型的存儲設備，包括硬盤驅動器，光盤驅動器和外部驅動器。某些計算機仍具有舊式存儲設備，例如軟盤。</p>
+<p><span>Storage Devices:Optical Drives<span> </span></span>存儲設備：光盤驅動器</p>
+<p><span>Optical drives refer to any disk drive that uses optical media, such as CDs, DVDs, or Blu-ray disks. Each disk has a different storage capacity due to the different wavelength of light the laser uses to read the disk, with shorter wavelengths enabling more data to be stored in the same physical space. CDs use infrared light, which has a long wavelength. DVDs use a red laser light, a light with a medium wavelength. Blu-ray uses a blue laser light, which has the shortest wavelength. A CD can hold 700 MB of data, or 80 minutes of music, a DVD can hold 4.7 GB on a standard disc and 8.4 GB on a dual-layer disc. Blu-ray disks can hold 25 GB on a standard disk and 50 GB on a dual-layer disc. Most contemporary workstations have a DVD writer, but Blu-ray writers are becoming more common. Also, each successive technology is backward compatible with the others, therefore a Blu-ray player can also read DVDs and CDs. However, a CD or DVD player cannot read a Blu-ray.</span></p>
+<p>光盤驅動器是指使用光盤，<span>CD</span>或<span>DVD</span>或藍光光盤等任何光學介質的磁盤驅動器。由於激光讀取磁盤所使用的光波長不同，每個磁盤具有不同的存儲容量，而較短的波長使更多數據可以存儲在同一物理空間中。<span>CD</span>使用的紅外光波長很長。<span>DVD</span>使用紅色激光，即中等波長的光。藍光使用波長最短的藍色激光。<span>CD</span>可以容納<span>700 MB</span>的數據或<span>80</span>分鐘的音樂，<span>DVD</span>可以在標準光盤上容納<span>4.7 GB</span>，在雙層光盤上可以容納<span>8.4 GB</span>。藍光磁盤在標準磁盤上可以容納<span>25 GB</span>，在雙層磁盤上可以容納<span>50 GB</span>。大多數當代工作站都有<span>DVD</span>刻錄機，但是藍光刻錄機正變得越來越普遍。也，每種相繼的技術都向後兼容，因此藍光播放器還可以讀取<span>DVD</span>和<span>CD</span>。但是，<span>CD</span>或<span>DVD</span>播放器無法讀取藍光。</p>
+<p><span>The different devices use different nomenclature for their capabilities. A CD-ROM, DVD-ROM, and BD-ROM (Blu-ray) all indicate that the device is a read-only memory (ROM) device. A device that is recordable only once is identified with an “R.” On a CD-R, DVD-R, DVD+R or BD-R, the contents of the disc cannot be changed after writing it the first time. The third category of devices are identified as “RW” devices, and known as write-many, write/rewrite, or erasable. This category includes CD-RW, DVD-RW, DVD+RW, DVD-RAM, and the BD-RE disc types.</span></p>
+<p>不同的設備為其功能使用不同的命名法。<span>CD-ROM</span>，<span>DVD-ROM</span>和<span>BD-ROM</span>（藍光）均表示該設備是只讀存儲器（<span>ROM</span>）設備。只能記錄一次的設備用“<span><span> </span>R</span>”標識。在<span>CD-R</span>，<span>DVD-R</span>，<span>DVD + R</span>或<span>BD-R</span>上，第一次寫入後無法更改光盤的內容。第三類設備被標識為“<span><span> </span>RW</span>”設備，稱為多次寫入，寫入<span>/</span>重寫或可擦除。此類別包括<span>CD-RW</span>，<span>DVD-RW</span>，<span>DVD + RW</span>，<span>DVD-RAM</span>和<span>BD-RE</span>光盤類型。</p>
+<p><span>The speed of an optical drive is described using an “X-rating.” The original CD players could read at 1X (one times), or 150 KBps. The 1X speed is the speed at which your audio CD drive plays your favorite song. DVD players operate at 1.385 MBps (so that is the 1X speed for that type of device). Blu-ray players operate at 4.5 MBps. When buying a drive, you will see the rating listed, such as a 52X CD player, which means it operates 52 times as fast as the original 150 KBps, or 7800 KBps, which is 7.8 MBps. The 1X for each device is the equivalent to listening to a music CD, watching a DVD, or watching a Blu-ray movie in a traditional player.</span></p>
+<p>光盤驅動器的速度用“<span><span> </span>X</span>等級”描述。原始<span>CD</span>播放器的讀取速度為<span>1</span>倍（一次）或<span>150 KBps</span>。<span>1X</span>速度是音頻<span>CD</span>驅動器播放喜歡的歌曲的速度。<span>DVD</span>播放器的運行速度為<span>1.385 MBps</span>（因此，該類型設備的速度為<span>1</span>倍）。藍光播放器的運行速度為<span>4.5 MBps</span>。購買驅動器時，您會看到列出的等級，例如<span>52X CD</span>播放器，這意味著它的運行速度是原始<span>150 KBps</span>或<span>7800 KBps</span>（<span>7.8 MBps</span>）的<span>52</span>倍。每個設備的<span>1X</span>等效於在傳統播放器中聆聽音樂<span>CD</span>，觀看<span>DVD</span>或觀看藍光電影。</p>
+<p><span> </span></p>
+<p><span>Storage Devices:External Devices<span> </span></span>存儲設備：外部設備</p>
+<p><span>eSATA is an extension of SATA used for external devices. The port looks identical to a regular SATA port and uses the same cables as a SATA port. Using eSATA can be thought of like using an extension cord. It brings the SATA port to the external portion of the computer's case. If your computer doesn’t have an eSATA port, you can purchase eSATA host adapters that fit in an expansion slot, such as a PCIe x1 or PCIe x4. The speed of eSATA can be 3–6 Gbps, which is very comparable to USB 3.0 speeds of 5 Gbps.</span></p>
+<p><span>eSATA</span>是用於外部設備的<span>SATA</span>的擴展。該端口看起來與常規<span>SATA</span>端口相同，並且使用與<span>SATA</span>端口相同的電纜。可以認為使用<span>eSATA</span>就像使用一根延長線。它將<span>SATA</span>端口連接到計算機機箱的外部。如果您的計算機沒有<span>eSATA</span>端口，則可以購買適合擴展插槽的<span>eSATA</span>主機適配器，例如<span>PCIe x1</span>或<span>PCIe x4</span>。<span>eSATA</span>的速度可以達到<span>3</span>–<span>6 Gbps</span>，與<span>USB 3.0</span>的<span>5 Gbps</span>速度非常可比。</p>
+<p><span>                                <img alt="Photograph depicting an eSATA port with two screws on either side. The port is a small rectangle and a small copper filament can be seen inside." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image18.png"/></span></p>
+<p><span>                                              eSATA port (eSATA</span>端口<span>)</span></p>
+<p><span>Another form of storage is the flash memory card. It is a type of memory that retains its contents without electricity and is very durable. These are commonly used in digital media players, cameras, and USB thumb drives. These cards come in an enormous variety with nearly 50 different types created, but only a few have become common. These common cards include SD, MMC, Memory Stick, and XD. Some computers have built-in readers for these cards with memory slots, but if your computer doesn’t, an external multi-slot card reader can be added by USB for about $10.</span></p>
+<p>另一種存儲方式是閃存卡。它是一種無需通電即可保留其內容的內存，並且非常耐用。這些通常用於數字媒體播放器，相機和<span>USB</span>拇指驅動器。這些卡種類繁多，創建了將近<span>50</span>種不同的類型，但只有少數幾種很常見。這些普通卡包括<span>SD</span>，<span>MMC</span>，<span>Memory Stick</span>和<span>XD</span>。某些計算機為這些帶有內存插槽的卡內置讀取器，但是如果您的計算機沒有，則可以通過<span>USB</span>添加外部多插槽卡讀取器，價格約為<span>10</span>美元。</p>
+<p><span>                       <img alt="A photograph depicting five flash memory cards. Three of the cards are 4 GB and are labeled SanDisk Extreme III. One memory card is labeled SanDisk 4.0 GB. One memory card is labeled CompactFlash 1 GB." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image19.png"/></span></p>
+<p><span>                                               Flash memory cards (</span>閃存卡<span>)</span></p>
+<p><span>USB flash drives are commonplace today and have replaced floppy disks as the removable media of choice. They are small in physical size and large in memory capability, with the ability to store 64 GB or more of data on a single “stick.” They are popular and easy to use, since they don’t require a special card reader, because the USB device has one built-in. They are often formatted with the FAT-16, FAT-32, or exFAT file system and are ready to use straight out of the box. Simply plug the device into an available USB port, the operating system recognizes it, and you can begin copying, deleting, and modifying files.</span></p>
+<p><span>USB</span>閃存驅動器在當今很普遍，並且已取代軟盤作為首選的可移動介質。它們的物理尺寸很小，內存容量也很大，能夠在單個“棒”上存儲<span>64 GB</span>或更多的數據。它們很受歡迎且易於使用，因為它們不需要特殊的讀卡器，因為<span>USB</span>設備內置了一個。它們通常使用<span>FAT-16</span>，<span>FAT-32</span>或<span>exFAT</span>文件系統進行格式化，並且可以直接使用。只需將設備插入可用的<span>USB</span>端口，操作系統即可識別它，然後您就可以開始復制，刪除和修改文件了。</p>
+<p><span>                                             <img alt="Photograph depicting a USB flash drive. It is blue plastic and rectangular. There is a cap that is removed and set to the side, exposing the metal USB connector." height="229" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image20.jpeg" width="398"/></span></p>
+<p><span>                                   USB flash drive (USB</span>閃存盤<span>)</span></p>
+<p><span> </span></p>
+<p><span>Storage Devices:Legacy Devices<span> </span></span>存儲設備：舊版設備</p>
+<p><span>Floppy disks dominated the removable storage arena until the late 1990s, and now they are nearly extinct in most organizations. While some removable USB thumb drives can store 64 GB or more of data, floppy disks usually only stored 1.44 MB of data. That means a single thumb drive can store the information from more than 60,000 floppy disks! Floppy disks used flexible magnetic media surrounded by a rigid plastic case. The most common floppy (shown in the bottom image) was the 3.5” floppy, which was named based on the diameter of the magnetic media inside the plastic case. It used to be commonplace to find a floppy disk drive on every computer, which was connected using a mini-molex or BERG power cable and a 34-pin internal IDE/PATA cable. Contemporary machines typically do not have these drives, as they have fallen out of favor with the public. If you have a need for a floppy drive, one can be purchased for less than $20 that can connect to your computer using your USB port. Windows always reserves the A:\ and B:\ drives for the floppy disk drive (FDD), even if your system doesn’t have one.</span></p>
+<p>直到<span>1990</span>年代後期，軟盤一直在可移動存儲領域佔據著主導地位，現在在大多數組織中它們幾乎已經滅絕。雖然某些可移動<span>USB</span>拇指驅動器可以存儲<span>64 GB</span>或更多的數據，但是軟盤通常僅存儲<span>1.44 MB</span>的數據。這意味著一個拇指驅動器可以存儲來自<span>60,000</span>多個軟盤的信息！軟盤使用柔性磁性介質，並由剛性塑料盒包圍。最常見的軟盤（如左圖所示）是<span>3.5</span>英寸的軟盤，它是根據塑料盒內部磁性介質的直徑來命名的。過去通常在每台計算機上都找到軟盤驅動器，該軟盤驅動器是使用<span>minimolex</span>或<span>BERG</span>電源電纜以及<span>34</span>針內部<span>IDE / PATA</span>電纜連接的。現代機器通常沒有這些驅動器，因為它們已經失去了公眾的青睞。如果需要軟盤驅動器，可以用不到<span>20</span>美元的價格購買一個軟盤驅動器，它可以使用<span>USB</span>端口連接到計算機。<span>Windows</span>始終為軟盤驅動器（<span>FDD</span>）保留<span>A</span>：<span>\</span>和<span>B</span>：<span>\</span>驅動器，即使您的系統沒有該驅動器也是如此。</p>
+<p><span>                              <img alt="A set of nine 3.5-inch floppy disks, three green and six yellow." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image21.png"/></span></p>
+<p><span>                                            3.5-inch floppy disks (3.5</span>英寸軟盤<span>)</span></p>
+<p><span>The final legacy storage device is the tape drive. Whereas FDDs are completely out of service today, tape drives are still used in some corporate environments. However, cloud computing is a natural solution to replace tape backups in enterprise environments because it not only automates the backup process but sends the data securely offsite. Tape drives were one of the first removable storage devices used to back up system data. Many home users now use external USB hard disks for this purpose, but many enterprise environments still rely on the tape drives, since they can store large amounts of data (up to 3 TB on a single tape), and can have that data easily transferred to a remote facility. Tapes can store data in native (1:1) or compressed (2:1) mode. A tape that can natively store 70 GB, in compressed mode can store 140 GB of data. Most tape drives connect via SCSI ports, but some can be found using IDE/PATA or SATA instead. Also, it is important to remember that if you are using a tape drive system, you must rotate your tapes to prevent them from getting worn out and have a good backup plan. The Tower of Hanoi is a common tape rotation system used by system administrators, and can be helpful in creating your rotational schema.</span></p>
+<p>最終的舊式存儲設備是磁帶機。儘管<span>FDD</span>如今已完全停用，但磁帶驅動器仍在某些公司環境中使用。但是，雲計算是替換企業環境中磁帶備份的自然解決方案，因為它不僅可以自動執行備份過程，而且可以安全地將數據發送到異地。磁帶驅動器是最早用於備份系統數據的可移動存儲設備之一。現在，許多家庭用戶為此使用外部<span>USB</span>硬盤，但是許多企業環境仍然依賴於磁帶驅動器，因為它們可以存儲大量數據（單個磁帶上最多<span>3 TB</span>），並且可以輕鬆地傳輸這些數據。到遠程設施。磁帶可以本機（<span>1</span>：<span>1</span>）或壓縮（<span>2</span>：<span>1</span>）模式存儲數據。可以本機存儲<span>70 GB</span>的磁帶，在壓縮模式下可以存儲<span>140 GB</span>的數據。大多數磁帶機通過<span>SCSI</span>端口連接，但有些磁帶機可以使用<span>IDE / PATA</span>或<span>SATA</span>找到。同樣，重要的是要記住，如果使用的是磁帶驅動器系統，則必須旋轉磁帶以防止其磨損並製定良好的備份計劃。河內之塔是系統管理員使用的常見磁帶旋轉系統，可以幫助您創建旋轉模式。</p>
+<p><span>                                                 <img alt="Photograph of the front of a computer with a 5.25-inch FDD, a 3.5-inch FDD and a tape drive. The tape drive has a tape cassette inserted." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image22.png"/></span></p>
+<p><span>                                                           Tape drive (</span>磁帶機<span>)</span></p>
+Storage Devices Hard Disk Drives 存儲設備 硬盤驅動器<br/>
+<p><span>Hard disk drives (HDDs) are by far the most important storage device used by a personal computer. These drives store all the user’s data files, applications, and operating systems. Whether the drive is internal or external, it is built the same way. Most drives are built from one or more double-sided platters of aluminum or glass that is coated with a magnetic surface. In the first hard drives, users were lucky to store a maximum of 5 MB of data, but now storage space of 500 GB to 3 TB is commonplace in most users’ workstations. Storage has certainly evolved into expansive storage capacities at minimal cost, with excellent performance speeds.</span></p>
+<p>硬盤驅動器（<span>HDD</span>）是迄今為止個人計算機使用的最重要的存儲設備。這些驅動器存儲所有用戶的數據文件，應用程序和操作系統。無論驅動器是內部驅動器還是外部驅動器，其構建方式均相同。大多數驅動器是由一個或多個塗有磁性表面的鋁或玻璃雙面盤製成的。在第一個硬盤驅動器中，用戶很幸運地存儲了最多<span>5 MB</span>的數據，但是現在在大多數用戶的工作站中，<span>500 GB</span>至<span>3 TB</span>的存儲空間已司空見慣。毫無疑問，存儲已發展為具有最低性能和卓越性能的擴展存儲容量。</p>
+<p><span>                                      <img alt="Photograph depicting an encased hard disk. It is a flat and rectangular metal box with a circular design on the top." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image23.jpeg"/></span></p>
+<p><span>                                                       Hard disk (</span>硬盤<span>)</span></p>
+<p><span>                                      <img alt="A photograph depicting the inner workings of a hard disk. The disk is circular, like a phonograph record, with an arm over it." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image24.png"/></span></p>
+<p><span>                                            Hard disk dissection (</span>硬盤解剖<span>)</span></p>
+<p><span>Hard drives are rated on several characteristics beyond the simple measurement of how much storage space they have. Most users will simply pick a drive based on the storage capacity, but the other performance factors can be even more important. If the drive is a SATA device, it can reach data transfer speeds of up to 6 Gbps, but that is dependent on how fast the drive can access the data from the disk. Hard drives have a spin rate, which is measured in rotations per minute (RPM). It is common for hard drives to have a 5400 RPM rate, but more expensive drives have 7200 RPM, 10000 RPM, or even 15000 RPM rates. The faster spin rates are usually found in servers and high-performance gaming systems, but the 7200 RPM drives are becoming more commonplace as prices continue to decline. Hard disks also have an internal buffer or cache. A inexpensive drive may have a buffer of only 8 MB, while a more expensive drive will have 64 MB of buffer. The bigger the buffer, the better the performance, and the faster the data retrieval from the disk.</span></p>
+<p>除了簡單地測量硬盤具有多少存儲空間外，還對硬盤進行了多種評估。大多數用戶只會根據存儲容量選擇一個驅動器，但其他性能因素可能更為重要。如果驅動器是<span>SATA</span>設備，則它可以達到高達<span>6 Gbps</span>的數據傳輸速度，但這取決於驅動器可以從磁盤訪問數據的速度。硬盤驅動器具有旋轉速度，該旋轉速度以每分鐘的旋轉數（<span>RPM</span>）度量。硬盤驅動器通常具有<span>5400 RPM</span>的速率，但是更昂貴的驅動器具有<span>7200 RPM</span>，<span>10000 RPM</span>甚至<span>15000 RPM</span>的速率。在服務器和高性能遊戲系統中通常可以找到更快的旋轉速度，但是隨著價格的不斷下降，<span>7200 RPM</span>驅動器變得越來越普遍。硬盤還具有內部緩衝區或緩存。便宜的驅動器可能只有<span>8 MB</span>的緩衝區，而價格更高的驅動器將有<span>64 MB</span>的緩衝區。緩衝區越大，性能越好，並且從磁盤檢索數據的速度越快。</p>
+<p><span>The newest technology in the storage arena is the solid state drive (SSD). As with most technology, this was fairly expensive when first introduced into the market, but pricing has leveled off and most PC manufacturers offer an SSD solution on new machines.</span></p>
+<p>固態硬盤（<span>SSD</span>）是存儲領域中的最新技術。與大多數技術一樣，這在首次投入市場時相當昂貴，但價格趨於平穩，大多數<span>PC</span>製造商都在新機器上提供<span>SSD</span>解決方案。</p>
+<p><span>Initially, in an effort to increase performance, some HDD manufacturers created a hybrid drive, combining a small solid state drive with a large traditional hard disk to give the user increased speed without the enormous cost of solid state drives. These devices are faster than a traditional drive, but not nearly as fast as an SSD.</span></p>
+<p>最初，為了提高性能，一些<span>HDD</span>製造商創建了一種混合驅動器，將小型固態驅動器與大型傳統硬盤結合在一起，從而為用戶提供了提高的速度，而又沒有固態驅動器的巨額成本。這些設備比傳統驅動器快，但不及<span>SSD</span>快。</p>
+<p><span>In addition to hybrid drives, Intel developed the mSata interface for mobile computing. The smaller form factor allows high-capacity SSD storage at the same access speeds by connecting to the SATA host controller.</span></p>
+<p>除了混合驅動器，英特爾還開發了用於移動計算的<span>mSata</span>接口。較小的外形尺寸可以通過連接到<span>SATA</span>主機控制器以相同的訪問速度實現大容量<span>SSD</span>存儲。</p>
+<p><span>                                       <img alt="Photograph depicting an SSD/HDD hybrid + HDD hard drive sitting on top of other devices. It is a flat rectangular box that is silver with a black border. The device has writing on it that is not decipherable, with the exception of an Intel logo." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image25.png"/></span></p>
+<p><span>                                            SSD/HDD hybrid + HDD hard drive</span></p>
+<p><span>                                             (SSD / HDD</span>混合<span>+ HDD</span>硬盤驅動器<span>)</span></p>
+<p><span>SSDs are intended to replace the traditional hard disk. They are fast and durable, and contain no moving parts. The SSD emulates a traditional hard drive and is often used in netbooks, Ultrabooks, and other lightweight systems, or machines that require fast, quiet performance. Most SSDs come in a 2.5-inch form factor, similar to a laptop hard disk, and use a 2.5-inch to 3.5-inch adapter when being placed in a desktop computer. The SSD can be built using multilevel cell (MLC) to save money, but these tend to be much slower than their more expensive and faster counterpart, the SLC (single level cell). Initially, these drives cost five to ten times as much as an equivalent-capacity traditional hard disk. Market demand and increased production have helped lower the pricing. As of the end of 2015, a 2.5-inch 250 GB SATAIII SSD can be purchased for less than $100, but the same amount of money would purchase a traditional 2 TB HDD. But, they are significantly faster and quieter, since they can access the information directly without having to wait for the hard disk to spin up and find the data on the disk.</span></p>
+<p><span>SSD</span>旨在替代傳統硬盤。它們既快速又耐用，並且沒有活動部件。<span>SSD</span>模仿傳統的硬盤驅動器，通常用於上網本，超極本和其他輕量級系統，或需要快速，安靜性能的機器中。大多數<span>SSD</span>的外形尺寸為<span>2.5</span>英寸，類似於筆記本電腦的硬盤，並且放在台式機中時使用<span>2.5</span>英寸至<span>3.5</span>英寸的適配器。可以使用多層單元（<span>MLC</span>）來構建<span>SSD</span>，以節省資金，但是這些<span>SSD</span>往往比價格更高，速度更快的同類產品<span>SLC</span>（單層單元）慢得多。最初，這些驅動器的成本是同等容量的傳統硬盤的五至十倍。市場需求和產量增加幫助降低了定價。截至<span>2015</span>年底，已有<span>2</span>。可以不到<span>100</span>美元的價格購買<span>5</span>英寸<span>250 GB SATAIII SSD</span>，但是用同樣的錢可以購買傳統的<span>2 TB HDD</span>。但是，它們可以更快，更安靜地運行，因為它們可以直接訪問信息，而不必等待硬盤啟動並在磁盤上查找數據。</p>
+<p><span>                                       <img alt="Photograph depicting a solid state drive (SSD) with solid state chips on a circuit board." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image26.png"/></span></p>
+<p><span>                                                     Solid state drive (SSD)</span></p>
+<p><span>                                                       (</span>固態驅動器（<span>SSD</span>）<span>)</span></p>
+<p><span>A redundant array of inexpensive drives (RAID) combines numerous traditional physical hard drives into a single logical disk to provide a faster or more redundant singular drive. RAID 0 (RAID zero) uses at least two drives to act as a single drive, using striping to boost performance. But, if either drive fails, all the data is lost. Therefore, with RAID 0, the user gains speed but does not gain any redundancy. RAID 1 (RAID one) uses at least two drives to act as a single drive, using mirroring to boost redundancy. Every time the drive is written to by the computer, two copies of the information are written (one to each drive). So, if either drive fails, all the data is still accessible and safe on the other drive. With RAID 1 the user gains redundancy, but does not gain any speed.</span></p>
+<p>廉價驅動器冗餘陣列（<span>RAID</span>）將眾多傳統物理硬盤驅動器組合到單個邏輯磁盤中，以提供更快或更冗餘的單個驅動器。<span>RAID 0</span>（<span>RAID 0</span>）至少使用兩個驅動器作為一個驅動器，並通過 條帶化 來提高性能。但是，如果任何一個驅動器發生故障，所有數據都會丟失。因此，使用<span>RAID 0</span>，用戶可以提高速度，但不會獲得任何冗餘。<span>RAID 1</span>（<span>RAID 1</span>）使用鏡像至少使用兩個驅動器作為一個驅動器 提高冗餘度。每次計算機寫入驅動器時，都會寫入兩份信息副本（每個驅動器一份）。因此，如果任何一個驅動器發生故障，所有數據仍然可以在另一個驅動器上訪問並且安全。使用<span>RAID 1</span>，用戶可以獲得冗餘，但不會獲得任何速度。</p>
+<p><span>Since RAID 0 gave us speed with no redundancy, and RAID 1 gave us redundancy with no increase in speed, engineers developed a hybrid of the two called RAID 01 or RAID 10. In RAID 01 or 10, four drives are combined using the striping from RAID 0 with the mirroring from RAID 1 to gain both speed and redundancy. The only problem with this solution is that you lose fifty percent of the storage space (just like we did in RAID 1) to overhead</span>、<span>redundancy. To overcome this, another variant, RAID 5, was established. In RAID 5, at least three drives are required and they operate as a single logical drive. When information is written to the drive, that information is striped across the drives and a parity is also spread across the drives. If a single drive fails, the information can be rebuilt using the existing information and parity information to fill in the missing pieces. Using hot-swappable drives, a bad drive can be removed, a new one inserted, and the RAID rebuilt without any downtime (though a performance loss will occur while the RAID is being rebuilt).</span></p>
+<p>由於<span>RAID 0</span>為我們提供了無冗餘的速度，而<span>RAID 1</span>為我們提供了無速度的冗餘，因此工程師開發了兩種混合的<span>RAID 01</span>或<span>RAID10</span>。在<span>RAID 01</span>或<span>10</span>中，四個驅動器通過使用具有從<span>RAID 1</span>鏡像的<span>RAID 0</span>，可同時獲得速度和冗餘。該解決方案的唯一問題是，您會損失<span>50</span>％的存儲空間（就像我們在<span>RAID 1</span>中所做的一樣）以增加開銷、冗餘。為了克服這個問題，建立了另一個變體<span>RAID 5</span>。在<span>RAID 5</span>中，至少需要三個驅動器，它們可作為單個邏輯驅動器運行。將信息寫入驅動器後，該信息將在驅動器上分條，並且奇偶校驗也會分佈在驅動器上。如果單個驅動器發生故障，可以使用現有信息和奇偶校驗信息來重建信息，以填充丟失的部分。使用可熱插拔的驅動器，可以卸下損壞的驅動器，插入新的驅動器，並且可以在不造成任何停機的情況下重建<span>RAID</span>（儘管在重建<span>RAID</span>時會造成性能損失）。</p>
+<p><span>                                   <img src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image27.png"/></span></p>
+<p><span>                                         Stripe of RAID Mirrors (RAID</span>鏡像條帶<span>)</span></p>
+<p><span>To create a RAID array, the workstation must have either a PATA or SATA hardware controller that supports hardware RAIDs. Some motherboards support these natively, while others will require the user to purchase an expansion card to perform these functions. If your system doesn’t support hardware RAIDs, Windows does support software RAIDs on all systems, but you will lose the benefits of the RAID for the main operating system using this approach.</span></p>
+<p>要創建<span>RAID</span>陣列，工作站必須具有支持硬件<span>RAID</span>的<span>PATA</span>或<span>SATA</span>硬件控制器。一些主板本身支持這些功能，而另一些則需要用戶購買擴展卡才能執行這些功能。如果您的系統不支持硬件<span>RAID</span>，則<span>Windows</span>會在所有系統上都支持軟件<span>RAID</span>，但是使用這種方法，您將失去主操作系統的<span>RAID</span>優勢。</p>
+<p><span>Hardware RAIDs require at least two hard disks for RAID 0 or RAID 1, at least three disks for RAID 5, and at least four disks for RAID 10 or RAID 01. To create a software RAID, you can use Windows’ disk management software to create the RAIDs for data drives and other partitions.</span></p>
+<p>硬件<span>RAID</span>至少需要兩個硬盤用於<span>RAID 0</span>或<span>RAID 1</span>，至少三個磁盤用於<span>RAID 5</span>，以及至少四個磁盤用於<span>RAID 10</span>或<span>RAID01</span>。要創建軟件<span>RAID</span>，可以使用<span>Windows</span>的磁盤管理軟件來創建<span>RAID</span>。為數據驅動器和其他分區創建<span>RAID</span>。</p>
+Storage Devices Drive Interfaces 存儲設備 驅動器接口
+<p><span>Computers require several things to function well: a method to receive data input, a method to process data, a way to output data, and a way to store data. Data storage has evolved over the years, but the most common storage mechanism, the hard disk, has been around for more than 35 years. The only real change has been in physical size (they have gotten smaller), logical size (they can store much more data), speed, and connector types. The most common types of connectors are SATA, PATA IDE, SCSI, floppy, eSATA, FireWire, USB, and network connections, each of which we will discuss.</span></p>
+<p>計算機需要幾件事情才能正常運行：一種接收數據輸入的方法，一種處理數據的方法，一種輸出數據的方法以及一種存儲數據的方法。數據存儲已經發展了多年，但是最常見的存儲機制硬盤已經存在了<span>35</span>年以上。唯一真正的變化是物理大小（變得更小），邏輯大小（它們可以存儲更多數據），速度和連接器類型。連接器最常見的類型是<span>SATA</span>，<span>PATA  IDE</span>，<span>SCSI</span>，軟盤，<span>eSATA</span>，<span>FireWire</span>，<span>USB</span>和網絡連接，我們將分別討論它們。</p>
+<p><span>PATA (Parallel Advanced Technology Attachment) has been around since the 1980s, but used to be called IDE (Integrated Drive Electronics). This type of connector uses a cable made up of 40 wires or 80 wires (which supported cable select mode). Both types of cables had 40 pins on each end. The newer-style cables were color-coded, so that the blue connector attached to the motherboard, the black connector attached to the primary (or master) device, and the gray connector attached to the secondary (or slave) device. This connector type was used for hard disk drives, CD drives, DVD drives, and some tape backup drives. Each of these devices has a jumper on it that must be set to “master,” “slave,” or “cable select” mode. “Cable select” eliminated the need to manually assign the master or slave. Each cable could support up to two devices, but only one master or slave device could be used on each cable. The BIOS had to be configured properly before using these devices. In spite of improvements to the EIDE interface using Ultra Direct Memory Access (UDMA), Serial ATA (SATA) is not limited to four devices per channel and has much faster access times.</span></p>
+<p><span>PATA</span>（並行高級技術附件）自<span>1980</span>年代就出現了，但以前被稱為<span>IDE</span>（集成驅動電子設備）。這種類型的連接器使用由<span>40</span>線或<span>80</span>線組成的電纜（支持電纜選擇模式）。兩種類型的電纜的每端都有<span>40</span>個插針。較新樣式的電纜已進行了顏色編碼，因此藍色連接器連接至主板，黑色連接器連接至主（或主）設備，灰色連接器連接至輔助（或從屬）設備。此連接器類型用於硬盤驅動器，<span>CD</span>驅動器，<span>DVD</span>驅動器和某些磁帶備份驅動器。這些設備中的每一個都有跳線，必須將其設置為“主”，“從”或“電纜選擇”模式。“電纜選擇”消除了手動分配主機或從機的需要。每條電纜最多可支持兩個設備，但是每條電纜上只能使用一個主設備或從設備。使用這些設備之前，必須正確配置<span>BIOS</span>。儘管使用超直接內存訪問（<span>UDMA</span>）對<span>EIDE</span>接口進行了改進，但串行<span>ATA</span>（<span>SATA</span>）不僅限於每個通道四個設備，而且訪問速度更快。</p>
+<p><span>                                           <img alt="Photograph depicting three IDE drives, each rectangular, stacked on top of each other." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image28.png"/></span></p>
+<p><span>                                                     IDE drive (IDE</span>驅動器<span>)</span></p>
+<p><span>                                    <img alt="Photograph depicting an IDE cable next to a SATA cable. The IDE cable is black with a blue, multi-pin connector. The SATA cable is red with a black connector." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image29.png"/></span></p>
+<p><span>                                                  Drive cables(</span>驅動器電纜<span>)</span></p>
+<p><span>SATA is the current connection method used for hard disks and optical drives. It is called serial because only a single device can be attached to each cable, and the data is transmitted in serial fashion (one bit at a time). These devices often do not have jumpers, but if they have one, it is used to configure the speed of data transfer or to enable a special feature like spread spectrum clocking . SATA is a peripheral device and is very fast, allowing for speeds of up to 6 Gbps for the newer version, or 3 Gbps for the older versions. The data cable is shaped like an L, with seven pins for data. The power cable is also L-shaped, but has 15 pins. Internal SATA ports can be converted to an eSATA (external SATA) port simply by using a header to connect the internal port.</span></p>
+<p><span>SATA</span>是用於硬盤和光盤驅動器的當前連接方法。之所以稱為串行，是因為每條電纜只能連接一個設備，並且數據以串行方式（一次一位）傳輸。這些設備通常沒有跳線，但如果有跳線，則可用於配置數據傳輸速度或啟用諸如擴頻時鐘等特殊功能 。<span>SATA</span>是外圍設備，速度非常快，新版本的速度高達<span>6 Gbps</span>，舊版本的速度高達<span>3 Gbps</span>。數據電纜的形狀像<span>L</span>形，有七個數據針。電源線也為<span>L</span>形，但有<span>15</span>針。只需使用接頭連接內部端口，即可將內部<span>SATA</span>端口轉換為<span>eSATA</span>（外部<span>SATA</span>）端口。</p>
+<p><span>                                     <img alt="Photograph depicting a SATA drive with the circuit board and connector exposed." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image30.png"/></span></p>
+<p><span>                                                      SATA drive (SATA</span>驅動器<span>)</span></p>
+<p><span>SCSI, or small computer system interface, supports daisy-chaining of devices (internally or externally) with either seven devices (narrow SCSI) or 15 devices (wide SCSI). Each device in the chain is provided with a Device ID number that is configured using a selector switch, DIP (dual inline package) switch, or jumper block. SCSI is an older technology and has largely been replaced by SATA and eSATA. Narrow SCSI could only support speeds of up to 40 MBps, while wide SCSI could support up to 320 MBps.</span></p>
+<p><span>SCSI</span>或小型計算機系統接口支持將設備（內部或外部）與<span>7</span>個設備（窄<span>SCSI</span>）或<span>15</span>個設備（寬<span>SCSI</span>）進行菊花鏈連接。鏈中的每個設備都提供了一個設備<span>ID</span>編號，該<span>ID</span>使用選擇器開關，<span>DIP</span>（雙列直插式封裝）開關或跳線塊進行配置。<span>SCSI</span>是一種較舊的技術，在很大程度上已被<span>SATA</span>和<span>eSATA</span>取代。窄<span>SCSI</span>只能支持高達<span>40 MBps</span>的速度，而寬<span>SCSI</span>可以支持高達<span>320 MBps</span>的速度。</p>
+<p><span>                                     <img alt="Photograph depicting an HP Surestore DAT-drive with two blue SCSI ports on the back. There is also a power cord port and a power on/off toggle button." src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH07/webcontent/PCH07/image31.png"/></span></p>
+<p><span>                       HP Surestore DAT-drive with two blue SCSI ports on the back</span></p>
+<p><span>                              (HP Surestore DAT</span>驅動器，背面有兩個藍色<span>SCSI</span>端口<span>)</span></p>
+<span>Storage Devices Hot Swapping 存儲設備 熱插拔</span>
+<p><span>When desktops were originally developed, they weren’t designed to allow for hot-swapping of devices. Hot-swapping is the act of adding or removing a device while the computer is still turned on. In the old days, the user would shut the system down, power the workstation off, then connect the device, and turn the machine back on, otherwise the computer wouldn’t recognize the new device. In the late 1990s, the Windows operating system began to allow hot-swapping of devices, which included USB and FireWire. This allowed the user to simply plug in a device, wait a few seconds, and then begin using it to store or retrieve data. Due to this hot-swapping, it is important that users use the “eject drive safely” feature in Windows before unplugging a device, otherwise data loss will occur. SATA eSATA also support hot-swapping, but only if AHCI (advanced host controller interface) is selected during configuration in the BIOS. If not, the drive will work as if it is an older PATA IDE device and will not support hot-swapping.</span></p>
+<p>最初開發台式機時，它們的設計不允許熱插拔設備。熱交換是在計算機仍打開時添加或刪除設備的操作。在過去，用戶會關閉系統，關閉工作站電源，然後連接設備，然後重新啟動計算機，否則計算機將無法識別新設備。在<span>1990</span>年代後期，<span>Windows</span>操作系統開始允許熱插拔設備，包括<span>USB</span>和<span>FireWire</span>。這使用戶可以簡單地插入設備，等待幾秒鐘，然後開始使用它來存儲或檢索數據。由於這種熱交換，在拔出設備電源之前，用戶必須在<span>Windows</span>中使用“安全彈出驅動器”功能，這一點很重要，否則會導致數據丟失。<span><span> </span>SATA   eSATA</span>也支持熱插拔，但前提是在<span>BIOS</span>中配置期間選擇了<span>AHCI</span>（高級主機控制器接口）。否則，驅動器將像舊的<span>PATA  IDE</span>設備一樣工作，並且不支持熱插拔。</p>
+</div>
+</div>
+<br />PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 1 << <a href='PCH7 Expansion Cards Audio Video and Storage 擴充卡 音頻 視頻和存儲 1.html'>Previous</a> <a href='40923208葉媛婷.html'>Next</a> >> 40923208葉媛婷</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
